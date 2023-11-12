@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "preInstall (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "preInstall (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
