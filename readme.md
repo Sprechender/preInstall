@@ -7,7 +7,9 @@ preInstall is a program for installing multiple programs.
 You can get normal and portable versions on the [releases](https://github.com/Sprechender/preInstall/releases) page.
 
 ## Usage
-Is pretty self explanatory. going to add a text sometime
+```shell
+py main.py
+```
 
 ## Contributing
 
