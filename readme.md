@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 # preInstall Instruction Language Documentation
 
 ## Introduction
