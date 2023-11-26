@@ -4,7 +4,7 @@
 
 Welcome to the README.MD for the preInstall Instruction Language or PIIL, a simple scripting language crafted to provide instructions to the preInstall Python script to install programs silently or passively.
 
-## ONLY WINDOWS SUPPORT
+**ONLY WINDOWS SUPPORT**
 
 ## Table of Contents
 
@@ -13,6 +13,7 @@ Welcome to the README.MD for the preInstall Instruction Language or PIIL, a simp
     - [CREATE](#create)
     - [RUN](#run)
     - [PRINT](#print)
+    - [DOWNLOAD](#download) <!-- New section for DOWNLOAD command -->
 3. [Example Script](#example-script)
 4. [Interpreter](#interpreter)
 5. [Usage](#usage)
@@ -23,7 +24,7 @@ Welcome to the README.MD for the preInstall Instruction Language or PIIL, a simp
 
 The syntax of the preInstall Instruction Language is designed to be simple and human-readable. Each instruction is written on a new line and may include comments preceded by the `#` symbol.
 
-example below:
+Example below:
 ```plaintext
 # THIS IS A COMMENT
 
@@ -51,6 +52,12 @@ The `PRINT` command is used to display messages.
 
 - To print a message: `PRINT "your message"`
 
+### DOWNLOAD
+
+The `DOWNLOAD` command is used to download files over HTTP or HTTPS.
+
+- To download a file: `DOWNLOAD http://example.com/file.txt TO output/file.txt`
+
 ## Example Script
 
 ```plaintext
@@ -59,15 +66,15 @@ The `PRINT` command is used to display messages.
 CREATE FOLDER output
 CREATE FILE output/data.txt
 RUN PROGRAM exeFile
+DOWNLOAD https://example.com/somefile.txt TO output/example.txt
 PRINT "Instructions completed successfully!"
 ```
 
 ## Usage
 
 1. Create a script using the syntax described in this documentation.
-2. Save the script with a `.instruction` file extension (e.g., `example.instruction`).
-3. Run the Python interpreter script: `python instruction_interpreter.py your_script.instruction`.
-or use preInstall which contains the interpreter
+2. Save the script with a `.instruction` file extension (e.g., `program_name.instruction`).
+3. Run the Python interpreter script: `python instruction_interpreter.py program_name.instruction` or use preInstall, which contains the interpreter.
 
 ## Contributing
 
@@ -75,5 +82,4 @@ If you have ideas for improvements or new features, feel free to contribute! For
 
 ## License
 
-This preInstall Instruction Language and its interpreter are open-source projects released under the [MIT](https://choosealicense.com/licenses/mit/)
->>>>>>> Stashed changes
+This preInstall Instruction Language and its interpreter are open-source projects released under the [MIT](https://choosealicense.com/licenses/mit/).
