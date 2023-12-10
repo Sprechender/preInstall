@@ -1,0 +1,9 @@
+# Firefox Developer Edition Installer Instruction
+# not affiliated with firefox / mozilla.
+# Instruction Script made by Sprechender
+# Version: 1.0
+# Author: Sprechender
+CREATE FOLDER downloads
+DOWNLOAD https://download.mozilla.org/?product=firefox-devedition-msi-latest-ssl&os=win64&lang=en-US TO FirefoxDeveloperEditionInstaller.msi
+RUN FirefoxDeveloperEditionInstaller.msi
+PRINT "Installed Firefox Developer Edition!"
